@@ -124,7 +124,7 @@ The optimized strategy significantly outperformed historical pricing decisions.
  
 ---
 
-# 💼 Business Relevance
+# Business Relevance
 
 This project demonstrates how data science can directly support retail pricing strategy by combining:
 
@@ -134,3 +134,4 @@ This project demonstrates how data science can directly support retail pricing s
 - Backtesting (Strategy Validation)  
 
 It simulates a real-world decision-support system used in fuel retail and convenience store operations.
+
