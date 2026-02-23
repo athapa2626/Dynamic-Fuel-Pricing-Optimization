@@ -109,11 +109,7 @@ The optimized strategy significantly outperformed historical pricing decisions.
 
 ---
 
-# Visualizations & Dashboard
-
-- Fuel demand vs. predicted demand (line chart)  
-- Actual vs. optimized profit (bar chart)  
-- % Profit Improvement (single-value KPI)  
+# Dashboard
 
 Interactive **Databricks dashboard**: [View Dashboard](https://dbc-8f741bd9-c6d4.cloud.databricks.com/dashboardsv3/01f110740f2e18909f335cc5304f9a05/published?o=7474660378651724)  
 
@@ -138,3 +134,4 @@ This project demonstrates how data science can directly support retail pricing s
 - Backtesting (Strategy Validation)  
 
 It simulates a real-world decision-support system used in fuel retail and convenience store operations.
+
