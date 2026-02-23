@@ -22,6 +22,11 @@ This project builds an end-to-end **dynamic pricing engine** that:
 
 The system combines economic modeling with ML-based forecasting to simulate real-world fuel pricing decisions.
 
+Two implementations are included:
+
+- **Local Python workflow:** Pandas, Scikit-learn, XGBoost, Matplotlib (for prototyping and analysis)  
+- **Databricks workflow:** PySpark, SQL, Databricks notebooks, and interactive dashboards (for enterprise-scale, distributed processing)
+
 ---
 
 # Dataset
@@ -54,8 +59,8 @@ This confirms expected negative price elasticity.
 
 To convert time-series data into supervised learning format:
 
-- Lag features (Price_lag1, Price_lag2)
-- Rolling averages (3-week, 5-week)
+- Lag features (Price_lag1, Price_lag2)  
+- Rolling averages (3-week, 5-week)  
 - Seasonal features (Month, Week of Year)
 
 These features capture short-term momentum and seasonal patterns.
@@ -104,24 +109,23 @@ The optimized strategy significantly outperformed historical pricing decisions.
 
 ---
 
-# Key Insights
+# Visualizations & Dashboard
 
-- Demand is strongly price elastic.  
-- Small price adjustments materially impact total profit.  
-- ML-based forecasting enables systematic pricing decisions.  
-- Dynamic optimization can outperform static pricing rules.  
+- Fuel demand vs. predicted demand (line chart)  
+- Actual vs. optimized profit (bar chart)  
+- % Profit Improvement (single-value KPI)  
+
+Interactive **Databricks dashboard**: [View Dashboard](https://dbc-8f741bd9-c6d4.cloud.databricks.com/dashboardsv3/01f110740f2e18909f335cc5304f9a05/published?o=7474660378651724)  
+
+![](images/dashboard.png)
 
 ---
 
 # Tech Stack
 
-- Python  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- XGBoost  
-- Matplotlib  
- 
+- Python, Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib (local workflow)  
+- PySpark, SQL, Databricks Notebooks, Databricks Dashboards (distributed workflow)  
+
 ---
 
 # Business Relevance
@@ -134,4 +138,3 @@ This project demonstrates how data science can directly support retail pricing s
 - Backtesting (Strategy Validation)  
 
 It simulates a real-world decision-support system used in fuel retail and convenience store operations.
-
